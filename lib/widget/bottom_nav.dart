@@ -23,28 +23,30 @@ class _BNavigatorState extends State<BNavigator> {
         });
       },
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.grey[600],
+      backgroundColor: Colors.grey[900],
       selectedItemColor: Colors.green,
       //selectedLabelStyle: TextStyle(color: Colors.white),
       iconSize: 25.0,
       selectedFontSize: 14.0,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
       unselectedFontSize: 12.0,
       items: const [
         BottomNavigationBarItem(
             icon: Icon(Icons.home,color: Colors.white),
-            label: 'Inico',
+            label:"inicio",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.search,color: Colors.white),
-          label: 'Buscar',
+          label:"inicio",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.account_circle_sharp,color: Colors.white),
-          label: 'perfil',
+          label:"inicio",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.settings,color: Colors.white),
-          label: 'Config',
+          label:"inicio",
         ),
       ],
     );

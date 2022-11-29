@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 class SearchPage extends StatelessWidget {
   const SearchPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
       appBar: AppBar(
-          backgroundColor: Colors.grey[400],
-        centerTitle: true, title: const Text("Busca tu libro")),
+          backgroundColor: Colors.green[500],
+        centerTitle: true, title: Text("Busca tu libro",style: GoogleFonts.anybody(fontSize: 30)),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(bottomRight: Radius.circular(2000),bottomLeft: Radius.circular(2000))),
+      ),
       body: Searchs(),
 
     );

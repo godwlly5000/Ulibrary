@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ProfilePage extends StatelessWidget {
   ProfilePage({super.key});
@@ -7,8 +8,10 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar (
-          backgroundColor: Colors.grey[400],
-          centerTitle: true, title: const Text("Perfil"),
+        backgroundColor: Colors.green[500],
+          centerTitle: true, title: Text("Perfil",style: GoogleFonts.anybody(fontSize: 30)),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(bottomRight: Radius.circular(2000),bottomLeft: Radius.circular(2000))),
       ),
       body: EditProfile(),
     );
@@ -29,7 +32,7 @@ class _EditProfileState extends State<EditProfile> {
       ListView(
         children: <Widget>[
           Container(
-            color: Colors.grey[300],
+            color: Colors.white,
             height: MediaQuery.of(context).size.height * 0.3,
             width: double.infinity,
             child:Padding(

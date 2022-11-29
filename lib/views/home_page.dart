@@ -31,8 +31,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       bottomNavigationBar: myBnB,
       //bottomNavigationBar: myBNB, //barra de navegación
-      body: RoutesNavBar(index: index,),//una vez que llamamos la barra de navegacion mandamos a llamar a la primera pagina que es el catalogo
-      floatingActionButton: FloatingActionButton(
+      body: RoutesNavBar(index: index,),
+      //una vez que llamamos la barra de navegacion mandamos a llamar a la primera pagina que es el catalogo
+      /*floatingActionButton: FloatingActionButton(
         onPressed: ()=>{
           Navigator.push(
               context,
@@ -42,7 +43,8 @@ class _HomePageState extends State<HomePage> {
         },
         backgroundColor: Colors.green,
         child: const Icon(Icons.comment_sharp),
-      ),
+      ),*/
+
     );
   }
 }
