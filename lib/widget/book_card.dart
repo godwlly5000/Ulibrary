@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:transparent_image/transparent_image.dart';
 import 'package:youlibv1/views/catalogo_page.dart';
 import 'package:youlibv1/views/home_page.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
@@ -24,26 +25,29 @@ Widget Bookcard () => Card(//este es el widget que aparece al momento de dar cli
             height: 50,
             width: 50,
             child: Scaffold(
-              body: BackPageCard(),
+              body: SafeArea(
+                child: BackPageCard(),
+              ),
                 backgroundColor: Colors.white.withOpacity(0.0),
             ),
+
           ),
           Ink.image(//imagen de fondo para el card
             image: NetworkImage("https://m.media-amazon.com/images/I/81P0sAaVArL.jpg"),
             height: 250,
             fit: BoxFit.cover,
           ),
-          Container(
-           //aqui ira el bar
-          ),
-          Container(//imagen del libro completo
-            child: Center(
-              child: Image(
-                image: NetworkImage('https://m.media-amazon.com/images/I/81P0sAaVArL.jpg'),
+          Center(
+            child: SafeArea(
+              child: FadeInImage.memoryNetwork(
+                placeholder: kTransparentImage,
+                image: 'https://m.media-amazon.com/images/I/81P0sAaVArL.jpg',
                 height: 200,
+                width: 175,
               ),
             ),
           ),
+
           Positioned(
             bottom: 16,
             right: 16,
@@ -109,28 +113,32 @@ class BooksCardBottom extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      width: size.width * 0.38,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(10),
-      child: Column(
-        children: <Widget>[
-          GestureDetector(
-            onTap: press,
-            child: Container(
-              child: Image.network("https://m.media-amazon.com/images/I/81P0sAaVArL.jpg"),
-              padding: EdgeInsets.all(kDefaultPadding / 15),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(10),
-                  bottomRight: Radius.circular(10),
+      width: size.width * 0.36,
+      height: size.height * 0.36,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(10),
+        child: Column(
+          children: <Widget>[
+            GestureDetector(
+              onTap: press,
+              child: Container(
+                child: FadeInImage.memoryNetwork(
+                  placeholder: kTransparentImage,
+                  image: 'https://m.media-amazon.com/images/I/81P0sAaVArL.jpg',
+                ),
+                padding: EdgeInsets.all(kDefaultPadding / 100),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
+                  ),
                 ),
               ),
-            ),
-          )
-        ],
-      ),
+            )
+          ],
         ),
+      ),
     );
   }
 }

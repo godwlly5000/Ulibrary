@@ -102,7 +102,7 @@ Widget _swiper(){//Aqui es donde mandamos a llamar a los libros
   return Container(
       color: Colors.white.withOpacity(0.1),
       width: double.infinity,
-      height: 210.0,
+      height: 200,
       child: Swiper(
         viewportFraction: 0.4,
         scale: 0.6,

@@ -23,13 +23,13 @@ class _BNavigatorState extends State<BNavigator> {
         });
       },
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.grey[900],
-      selectedItemColor: Colors.green,
+      backgroundColor: Colors.green[500],
+      selectedItemColor: Colors.white,
       //selectedLabelStyle: TextStyle(color: Colors.white),
       iconSize: 25.0,
       selectedFontSize: 14.0,
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
       unselectedFontSize: 12.0,
       items: const [
         BottomNavigationBarItem(
@@ -38,15 +38,15 @@ class _BNavigatorState extends State<BNavigator> {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.search,color: Colors.white),
-          label:"inicio",
+          label:"Buscar",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.account_circle_sharp,color: Colors.white),
-          label:"inicio",
+          label:"Perfil",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.settings,color: Colors.white),
-          label:"inicio",
+          label:"Config",
         ),
       ],
     );
