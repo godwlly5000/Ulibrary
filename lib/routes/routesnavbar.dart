@@ -10,8 +10,8 @@ class RoutesNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {//En esta parte mandaos a llamar las paginas de nuestra aplicacion que queremos que se vea en nuestro NabBAR
     List<Widget> myList = [
-      CatalogoPage(),
-      SearchPage(),
+      const CatalogoPage(),
+      const SearchPage(),
       ProfilePage(),
       SettingsPage()
 

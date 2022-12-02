@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:youlibv1/controllers/api_fetch.dart';
+import 'package:youlibv1/models/book_model.dart';
 import 'package:youlibv1/routes/routesnavbar.dart';
-import 'package:youlibv1/views/coment_page.dart';
 import 'package:youlibv1/widget/bottom_nav.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int index = 0;
   BNavigator ?myBnB;
+  //Variable que contiene la lista de libros
 
   @override
   void initState() {

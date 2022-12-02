@@ -13,7 +13,7 @@ class _Record_PageState extends State<Record_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green[500],
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
         centerTitle: true, title: Text("Registro",style: GoogleFonts.anybody(fontSize: 30)),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.only(bottomRight: Radius.circular(2000),bottomLeft: Radius.circular(2000))),

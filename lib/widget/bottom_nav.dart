@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:youlibv1/views/settings_Page.dart';
-import 'package:youlibv1/views/search_Page.dart';
 
 class BNavigator extends StatefulWidget {
   final Function currentIndex;
@@ -23,30 +21,34 @@ class _BNavigatorState extends State<BNavigator> {
         });
       },
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Colors.green[500],
-      selectedItemColor: Colors.white,
+      backgroundColor: Colors.blue,
+      selectedItemColor: Colors.green,
       //selectedLabelStyle: TextStyle(color: Colors.white),
       iconSize: 25.0,
       selectedFontSize: 14.0,
-      showSelectedLabels: true,
-      showUnselectedLabels: true,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
       unselectedFontSize: 12.0,
       items: const [
         BottomNavigationBarItem(
-            icon: Icon(Icons.home,color: Colors.white),
+            activeIcon: Icon(Icons.home,color: Colors.white, size: 30),
+            icon: Icon(Icons.home,color: Colors.white60),
             label:"inicio",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.search,color: Colors.white),
-          label:"Buscar",
+          activeIcon: Icon(Icons.search,color: Colors.white, size: 30),
+          icon: Icon(Icons.search,color: Colors.white60),
+          label:"inicio",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.account_circle_sharp,color: Colors.white),
-          label:"Perfil",
+          activeIcon: Icon(Icons.account_circle_sharp,color: Colors.white, size: 30),
+          icon: Icon(Icons.account_circle_sharp,color: Colors.white60),
+          label:"inicio",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.settings,color: Colors.white),
-          label:"Config",
+          activeIcon: Icon(Icons.settings,color: Colors.white, size: 30),
+          icon: Icon(Icons.settings,color: Colors.white60),
+          label:"inicio",
         ),
       ],
     );

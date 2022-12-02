@@ -38,7 +38,7 @@ class _WidgetTreeState extends State<WidgetTree> {
       stream: Auth().authStateChanges,
       builder: (context, snapshot){
         if(snapshot.hasData){
-          return HomePage();//mandamos a llamar la barra de navegacion
+          return const HomePage();//mandamos a llamar la barra de navegacion
         }else{
           return const LoginPage();
         }
