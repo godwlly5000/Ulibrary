@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.youlibv1">
+    package="com.utsh.youlibv1">
    <application
         android:label="Ulibrary"
         android:name="${applicationName}"

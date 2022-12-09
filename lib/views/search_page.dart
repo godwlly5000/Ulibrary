@@ -106,7 +106,7 @@ class _SearchPageState extends State<SearchPage> {
             child: fetch ? FutureBuilder<List<Book>>(
               future: listBooks,
               builder: ((context, snapshot){
-                if(snapshot!.data!.length != 0){
+                if(snapshot.data!.length != 0){
                   List<Book> list = snapshot.data!.map((e) => e).toList();
                   return ListView(
                     children: list.map((book) => ItemBook(book: book)).toList(),

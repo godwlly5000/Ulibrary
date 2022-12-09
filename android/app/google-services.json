@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:867547068042:android:3863689948192bf0599f73",
         "android_client_info": {
-          "package_name": "com.example.youlib"
+          "package_name": "com.utsh.youlib"
         }
       },
       "oauth_client": [
@@ -39,7 +39,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:867547068042:android:d54d917b6339ccba599f73",
         "android_client_info": {
-          "package_name": "com.example.youlibv1"
+          "package_name": "com.utsh.youlibv1"
         }
       },
       "oauth_client": [
@@ -47,7 +47,7 @@
           "client_id": "867547068042-6mncnm3u5qqp8tepdhn94b8jc3jec8to.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.youlibv1",
+            "package_name": "com.utsh.youlibv1",
             "certificate_hash": "0922708b03bdea8af2204dd31734cfb7d20d1f1d"
           }
         },
